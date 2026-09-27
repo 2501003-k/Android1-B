@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity8">
+
+    <!-- 생일 월/일 입력 (두 계산에 공통으로 사용) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생일(월, 일)을 입력하세요." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="월"
+            android:inputType="number"
+            android:maxLength="2" />
+
+        <EditText
+            android:id="@+id/editDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="일"
+            android:inputType="number"
+            android:maxLength="2" />
+    </LinearLayout>
+
+    <!-- 출생 년도 입력 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="태어난 년도를 입력하세요." />
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:hint="출생 년도를 입력하세요."
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <Button
+        android:id="@+id/btnAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="만 나이 계산" />
+
+    <!-- 나이 입력 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="당신의 만 나이를 입력하세요." />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:hint="나이를 입력하세요"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <Button
+        android:id="@+id/btnYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="태어난 해 계산" />
+
+</LinearLayout>

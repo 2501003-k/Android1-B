@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity5">
+
+    <!-- 섭씨 입력 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="섭씨 온도를 입력하세요." />
+
+    <EditText
+        android:id="@+id/editCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="섭씨 온도를 입력하세요"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnToFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="화씨온도 계산" />
+
+    <!-- 화씨 입력 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화씨 온도를 입력하세요." />
+
+    <EditText
+        android:id="@+id/editFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="온도를 입력하세요"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/btnToCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="섭씨온도 계산" />
+
+    <!-- 결과 -->
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과" />
+
+</LinearLayout>
